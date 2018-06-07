@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业邀请函</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+	<div id="wrap">
+		<!-- 头像和昵称层 -->
+		<div id="headImg"></div>
+		<!-- 昵称 -->
+		<div id="name">
+			<p id="setname"></p>
+			<p>的邀请函</p>
+		</div>
+		<!-- 邀请函内容区域 -->
+		<div id="invitCon" class="content">
+			<!-- 多行文本区域 -->
+			<div id="contentBg">
+				<textarea id="settext" readonly></textarea>
+			</div>
+		</div>
+		<div id="visitCon" class="content">
+			<p>已邀请到</p>
+			<!-- 里层模板 -->
+			<!-- <p id="visitNum"><em>15</em>人</p> -->
+			<p id="visitNum"></p>
+			<div id="visitPut">
+				<div id="vitPic"></div>
+			</div>
+			<div id="wantgo">
+				<p>我要去</p>
+			</div>
+		</div>
+		<div id="sayCon">
+			<p>朋友留言</p>
+			<div id="sayArea">
+				<!-- 模板 -->
+				<!-- <li>
+					<div class="liTitle">
+						<div class="titleLeft">
+							<img src="images/sayImg/headPic1.jpg" />
+							<span>willxiaodasfaiohflakgjhkl;ajgolaj</span>
+						</div>
+						<div class="titleRight">
+							<img src="images/loveHblack.png" />
+							<span>1</span>
+						</div>
+					</div>
+					<div class="liCon">
+						<p>这是留言内容哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈或或或或或或或或或或或或</p>
+					</div>
+				</li> -->
+			</div>
+			<div id="input">
+				<!-- 数据提交 -->
+				<form action="#" method="post" name="downSay">
+					<textarea placeholder="这是你写评论的地方" /></textarea>
+					<input type="submit" value="留言" id="sub" />
+				</form>
+			</div>
+		</div>
+		<!-- 此处应该先跳到QQ登录 然后再由QQ登录跳回到制作页面 -->
+		<a href="make.html" id="makeIt">
+			<p>制作我的邀请函</p>
+		</a>
+		<p>星空学生创新中心丨Copyright©2017</p>
+	</div>
+	<!-- 遮罩层 -->
+	<div id="shade" style="display:none">
+		<div id="shadeCon">
+			<div id="close">
+				<img src="images/close.png" />
+			</div>
+			<div id="choice" style="display:none">
+				<a href="#">
+					<img src="images/qq.png" />
+				</a>
+				<a href="#">
+					<img src="images/road.png" />
+				</a>
+			</div>
+			<div id="hadLogin" style="display:none">
+				<p>您已经报名过了~</p>
+				<a href="#">到校路线介绍</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/invite.js"></script>
+</body>
+</html>

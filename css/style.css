@@ -1,0 +1,388 @@
+/*清除默认样式*/
+html,body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,label,dl,dt,dd,fieldset,img,hr{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*引入字体*/
+@font-face{
+	font-family: 'ProductSans';
+	src:url('../font/ProductSanst.ttf');
+}
+
+html,
+body{
+	/*position: absolute;*/
+	width: 100%;
+	height: auto;
+}
+
+#wrap{
+	/*background: url(../images/bg.png);*/
+	/*height: 1000px;*/
+	overflow: hidden;
+	/*弹性布局*/
+	/*display: -webkit-box;
+	-webkit-box-pack:center;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;*/
+	/*text-align: center;*/
+
+}
+
+#wrap #headImg{
+	background-color: black;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+#wrap #name{
+	margin-top: 0.3rem;
+	text-align: center;
+	color: #ffffff;
+}
+#wrap #name p:first-child{
+	font-family: 'ProductSans';
+	font-size: 0.8rem;
+	/*设置昵称超出隐藏*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#wrap #name p:last-child{
+	font-family: '微软雅黑';
+	font-size: 0.7rem;
+}
+#wrap .content{
+	margin: 0 auto;
+}
+
+#wrap #invitCon{
+	background-color: #ffffff;
+	/*padding: 0.3rem;*/
+	border-radius: 2%;
+}
+#wrap .content #contentBg{
+	width: 100%;
+	height: 100%;
+	border-radius: 2%;
+	text-align: center;
+}
+/*设置滚动条样式*/
+/*::-webkit-scrollbar
+{
+    background-color: white;
+    width: 1px;
+}*/
+
+#wrap .content textarea{
+	/*margin: 0.5rem;*/
+	border-radius: 2%;
+	border: none;
+	margin-top:0.2rem;
+	/*text-indent: 2em;*/
+	font-family: '微软雅黑';
+	font-size: 0.5rem;
+	line-height: 0.8rem;
+	/*背景透明*/
+	background:transparent;
+	overflow-y: auto;
+}
+
+#wrap #visitCon{
+	text-align: center;
+	color: #ffffff;
+	overflow: hidden;
+}
+
+#wrap #visitCon p:first-child{
+	margin-top: 0.5rem;
+	font-family: '微软雅黑';
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+#wrap #visitCon #visitNum{
+	font-family: '微软雅黑';
+	font-size: 0.5rem;
+}
+#wrap #visitCon #visitNum em{
+	font-family: 'ProductSans';
+	font-style: normal;
+	font-size: 1.5rem;
+
+}
+
+#wrap #visitCon #visitPut{
+	text-align: left;
+	overflow: hidden;
+}
+#wrap #visitCon #vitPic{
+	margin-top: 0.85rem;
+	overflow-y: auto;
+}
+#wrap #visitCon #visitPut img{
+	border-radius: 50%;
+	margin-left: 0.3rem;
+
+}
+#wrap #visitCon #wantgo{
+	margin: 1rem auto 0;
+	background-color: #02d1d3;
+	border-radius: 3rem;
+	text-align: center;
+}
+
+#wrap #visitCon #wantgo p{
+	font-family: '微软雅黑';
+	font-size: 0.5rem;
+	letter-spacing: 0.1rem;
+}
+
+#wrap #sayCon{
+	
+	margin: 0 auto;
+	text-align: center;
+}
+
+#wrap #sayCon>p:first-child{
+	font-family: '微软雅黑';
+	font-weight: bold;
+	font-size: 0.6rem;
+	color: #ffffff;
+}
+#wrap #sayCon #sayArea{
+	border-radius: 2%;
+	/*background-color: green;*/
+	background-color: #ffffff;
+	margin-top: 0.3rem;
+	padding: 0.4rem;
+	text-align: left;
+	overflow-y: auto;
+}
+#wrap #sayCon #sayArea li{
+	list-style: none;
+	border-bottom: 0.01rem solid #aaaaaa;
+}
+#wrap #sayCon #sayArea li .liTitle{
+	/*弹性布局*/
+	display: -webkit-box;
+	color:#505050;
+}
+#sayArea li .liTitle .titleLeft{
+	width: 80%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#sayArea li .liTitle .titleRight{
+	/*-webkit-box-flex:1;*/
+	width: 20%;
+	text-align: right;
+}
+#sayArea li .liTitle .titleLeft img{
+	border-radius: 50%;
+	vertical-align: middle;
+}
+#sayArea li .liTitle .titleLeft span{
+	font-family: '微软雅黑';
+	font-weight: bold;
+	font-size: 0.5rem;
+	margin-left: 0.3rem;
+
+	/*width: 100%;*/
+
+
+}
+#sayArea li .liTitle .titleRight img{
+	width: 0.5rem;
+	height: 0.5rem;
+	/*float: left;*/
+	/*display: block;
+	float: right;*/
+}
+#sayArea li .liTitle .titleRight span{
+	font-size: 0.5rem;
+	display: block;
+	/*text-align: right;*/
+	float: right;
+	margin-left: 0.1rem;
+	margin-top: 0.4rem;
+}
+#wrap #sayCon #sayArea li .liCon{
+	margin-bottom: 0.3rem;
+	margin-top: 0.2rem;
+	padding-left: 1.5rem;
+}
+#sayArea li .liCon p{
+	font-family: '微软雅黑';
+	font-size: 0.4rem;
+	color: #aaaaaa;
+}
+
+#wrap #sayCon #input{
+	width: 100%;
+	margin-top: 0.3rem;
+	text-align: left;
+}
+#wrap #sayCon textarea{
+	width: 70%;
+	border-radius: 0.2rem;
+	height: 1.5rem;
+	font-size: 0.3rem;
+}
+#wrap #sayCon input{
+	width: 20%;
+	height: 1.5rem;
+	vertical-align: top;
+	margin-top: 0.05rem;
+	background-color: #25b5ff;
+	border: none;
+	border-radius: 8%;
+	font-family: '微软雅黑';
+	color: #ffffff;
+	font-size: 0.5rem;
+}
+
+#wrap>a{
+	width: 6rem;
+	height: 1.8rem;
+	line-height: 1.8rem;
+	text-align: center;
+	display: block;
+	margin: 1rem auto 0.5rem;
+	border-radius: 0.5rem;
+	background-color: #fcff25;
+	text-decoration: none;
+}
+#wrap a>p{
+	font-family: '微软雅黑';
+	font-size: 0.6rem;
+	font-weight: bold;
+	color: #ff8400;
+}
+
+#wrap>p{
+	display: block;
+	margin: 0 auto 0.5rem;
+	text-align: center;
+	font-family: '微软雅黑';
+	font-size: 0.3rem;
+	/*font-weight: bold;*/
+	color: #aaaaaa;
+}
+
+/*遮罩层*/
+#shade{
+	position: absolute;
+	background:rgba(102,102,102,0.6);
+	top: 0;
+	left: 0;
+}
+#shade #shadeCon{
+	position: fixed;
+	background-color: #ffffff;
+	left: 50%;
+	top: 50%;
+	border-radius: 0.5rem;
+	border: 0.1rem solid #0baafd;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#shade #shadeCon #close{
+	float: right;
+	margin-right: 0.3rem;
+}
+
+#shade #shadeCon #close img{
+	width: 0.6rem;
+	height: 0.6rem;
+}
+#shade #shadeCon #choice a{
+	text-decoration: none;
+}
+#shade #shadeCon #choice a img{
+	width: 2rem;
+	margin-top: 0.8rem;
+	margin-left: 0.5rem;
+	vertical-align: middle;
+}
+
+#shade #shadeCon #hadLogin{
+	text-align: center;
+}
+#shade #shadeCon #hadLogin p{
+	color: #009fd3;
+	font-family: '微软雅黑';
+	font-size: 0.6rem;
+	font-weight: bold;
+	margin-top: 1.5rem;
+}
+#shade #shadeCon #hadLogin a{
+	color: #6f6f6f;
+	font-family: '微软雅黑';
+	font-size: 0.3rem;
+}
+
+/*制作我的邀请函样式*/
+#wrap #areaChoice{
+	margin: 1rem auto 0.5rem;
+	/*background-color: green;*/
+	/*border-radius: 0.5rem;*/
+	display: -webkit-box;
+}
+#wrap #areaChoice .place{
+	-webkit-box-flex:1;
+	text-align: center;
+	/*background-color: #00a0e9;*/
+	border-radius: 0.3rem;
+	padding-top: 0.1rem;
+}
+
+#wrap #areaChoice .place img{
+	width: 1.85rem;
+}
+#wrap #areaChoice .place p{
+	margin-top: -0.1rem;
+	font-family: '微软雅黑';
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+#wrap #finish{
+	margin: 0 auto 0.5rem;
+	font-family: '微软雅黑';
+	font-weight: bold;
+	text-align: center;
+
+}
+
+#wrap #finish #preview{
+	width: 30%;
+	height: 100%;
+	float: left;
+	/*text-align: center;*/
+	background-color: #00c0ff;
+	margin-right: 0.3rem;
+	border-radius: 0.4rem;
+	font-size: 0.4rem;
+}
+#wrap #finish #preview p{
+	font-size: 0.5rem;
+	color: #007ba3;
+	margin-top: 0.44rem;
+}
+#wrap #finish #complete{
+	/*display: block;*/
+	width: 65%;
+	height: 100%;
+	float: right;
+	background-color: #fcff25;
+	border-radius: 0.4rem;
+	text-decoration: none;
+	font-size: 0.5rem;
+
+}
+#wrap #finish #complete p{
+	margin-top: 0.44rem;
+	color: #ff8400;
+}
